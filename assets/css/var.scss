@@ -1,0 +1,55 @@
+
+$dark_bg: #1E1E1E;
+$dark_light_bg: linear-gradient(0deg, #4B4B4B, #4B4B4B), #1E1E1E;
+$white_color: #fff;
+
+$radius: 3px;
+
+
+$pt_50: 50px;
+
+
+$size_100: calc( (100vw - 360px)/(1920 - 360) * (100 - 30) + 30px);
+$size_34: calc( (100vw - 360px)/(1920 - 360) * (34 - 20) + 20px);
+$size_14: calc( (100vw - 360px)/(1920 - 360) * (14 - 14) + 14px);
+$size_16: calc( (100vw - 360px)/(1920 - 360) * (16 - 12) + 12px);
+$size_20: calc( (100vw - 360px)/(1920 - 360) * (20 - 14) + 14px);
+$size_18:  calc( (100vw - 360px)/(1920 - 360) * (18 - 12) + 12px);
+
+
+
+@mixin btns {
+  background: transparent;
+  border: 1px solid #1E1E1E;
+  padding: 26px 70px;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  color: $dark_bg;
+  font-size: $size_16;
+  border-radius: 3px;
+  font-weight: 500;
+  transition: 0.3s all;
+  line-height: 20px;
+
+  &:hover{
+    background: $dark_bg;
+    color: $white_color;
+  }
+  &:focus{
+    background: $dark_light_bg
+  }
+}
+@mixin btn_mini{
+  padding: 8px 20px 8px 10px;
+  border-radius: 3px;
+  border: 1px solid $dark_bg;
+  font-family: 'Montserrat',sans-serif;
+  color: $dark_bg;
+  font-weight: 700;
+  font-size: $size_18;
+  gap: 10px;
+}
+
+
+
