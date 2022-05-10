@@ -12,6 +12,9 @@
 body{
   font-family: 'Montserrat',sans-serif;
 }
+a{
+  outline: none;
+}
 .section{
   padding-top: 100px   ;
 }
@@ -186,6 +189,7 @@ header{
         img{
           height: 100%;
           width: 100%;
+          object-fit: cover;
         }
         .hover_img{
           opacity: 0;
@@ -196,6 +200,7 @@ header{
           right:0;
           bottom: 0;
           z-index: 50;
+          object-fit: cover;
         }
         .size_list{
           opacity: 0;
@@ -550,7 +555,7 @@ header{
   box-sizing: border-box;
   position: fixed;
   top:0px;
-  transform: translateY(calc(0% + 90px)) scale(0);
+  transform: translateY(calc(-200% + 90px)) scale(1);
   transition: .3s all;
   z-index:100;
   left: 0;
