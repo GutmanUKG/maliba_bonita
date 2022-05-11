@@ -122,10 +122,20 @@ header{
         padding: 15px;
         box-sizing: border-box;
         transition: 0.3s all;
-        &:hover{
+        height:40px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        &.info{
           background: $dark_bg;
           color: $white_color;
           border-radius: $radius;
+          height:40px;
+        }
+        &:hover{
+          //background: $dark_bg;
+          color: $hover_color;
+
         }
       }
     }

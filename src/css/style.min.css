@@ -131,6 +131,7 @@ header .logo a {
   font-weight: 700;
   font-size: calc((100vw - 360px) / 1560 * 6 + 12px);
   gap: 10px;
+  height: 40px;
 }
 
 .main_menu {
@@ -154,11 +155,19 @@ header .logo a {
   padding: 15px;
   box-sizing: border-box;
   transition: 0.3s all;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main_menu ul li a:hover {
+.main_menu ul li a.info {
   background: #1E1E1E;
   color: #fff;
   border-radius: 3px;
+  height: 40px;
+}
+.main_menu ul li a:hover {
+  color: #DBDBDB;
 }
 
 .banner {
