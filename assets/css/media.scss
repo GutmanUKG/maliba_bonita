@@ -1,7 +1,27 @@
+@media (max-width: 1486px){
+  .catalog_wrapper .catalog_list{
+    justify-content:space-between;
+    .item{
+      flex: 0 0 31%;
+    }
+  }
+}
+@media(max-width: 1440px){
+  header{
+    .row{
+      margin-right: 0;
+    }
+  }
+  main{
+    .row{
+      margin-right:0;
+    }
+  }
+}
 @media (min-width:1400px){
   .container{
     max-width: 1490px;
-    padding: 0;
+    //padding: 0;
   }
 }
 

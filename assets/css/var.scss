@@ -2,7 +2,8 @@
 $dark_bg: #1E1E1E;
 $dark_light_bg: linear-gradient(0deg, #4B4B4B, #4B4B4B), #1E1E1E;
 $white_color: #fff;
-
+$grey_light: #787878;
+$grey:#F2F2F2;
 $radius: 3px;
 
 
@@ -15,9 +16,10 @@ $size_14: calc( (100vw - 360px)/(1920 - 360) * (14 - 14) + 14px);
 $size_16: calc( (100vw - 360px)/(1920 - 360) * (16 - 12) + 12px);
 $size_20: calc( (100vw - 360px)/(1920 - 360) * (20 - 14) + 14px);
 $size_18:  calc( (100vw - 360px)/(1920 - 360) * (18 - 12) + 12px);
-
-
-
+$size_12:calc( (100vw - 360px)/(1920 - 360) * (12 - 12) + 12px);
+$size_13: calc( (100vw - 360px)/(1920 - 360) * (13 - 13) + 13px);
+$size_17:calc( (100vw - 360px)/(1920 - 360) * (17 - 17) + 17px);
+$familyMoserat: 'Montserrat',sans-serif;
 @mixin btns {
   background: transparent;
   border: 1px solid #1E1E1E;
@@ -52,4 +54,6 @@ $size_18:  calc( (100vw - 360px)/(1920 - 360) * (18 - 12) + 12px);
 }
 
 
-
+input{
+  outline:none;
+}
