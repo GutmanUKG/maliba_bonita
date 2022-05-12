@@ -15,6 +15,9 @@ body{
 a{
   outline: none;
 }
+.btn_cart{
+  @include btn_cart;
+}
 .section{
   padding-top: 100px   ;
 }
@@ -152,6 +155,11 @@ header{
       width: 100%;
       height: 900px;
       object-fit: cover;
+    }
+    .btn_buy{
+      position: absolute;
+      top: calc(100% - 130px);
+      width:max-content;
     }
   }
   .col-5{
@@ -778,7 +786,163 @@ header{
   }
 }
 
+//Catalog Details
+.header_detail_catalog{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom: 20px;
+  //position:fixed;
+  //left:0;
+  //right: 0;
+  //background: #fff;
+  a{
+    color:$dark_bg;
+    font-family: $familyMoserat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $size_16;
+  }
+}
+.catalog_detail_imgs{
+  //padding-top: 60px;
 
+  .catalog_detail_imgs_list{
+    gap: 30px;
+    .item{
+      width:calc(50% - 30px);
+      img{
+        border-radius: $radius;
+        width: 100%;
+        max-height:660px;
+        object-fit:contain;
+      }
+    }
+  }
+}
+.scroll_block{
+  //position: relative;
+}
+.catalog_detail_description{
+  //position:fixed;
+  //right: 10px;
+  //top: calc(0% + (42px + 19px + 90px));
+  .articl{
+    font-family: $familyMoserat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $size_16;
+    line-height: 10px;
+    color: $dark_bg;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    span{
+
+    }
+    .info{
+      font-family: $familyMoserat;
+      font-style: normal;
+      font-weight: 700;
+      font-size: $size_14;
+      line-height: 10px;
+      border: 1px solid $dark_bg;
+      border-radius: $radius;
+      padding:8px;
+      box-sizing: border-box;
+    }
+  }
+  h1{
+    font-family: $familyMoserat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $size_28;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $dark_bg;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .prev_text{
+    font-family: $familyMoserat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $size_16;
+    line-height: 20px;
+    color: $dark_bg;
+    margin-bottom: 30px;
+  }
+  .filter_wrapper{
+    padding-left: 0;
+    border-bottom:none;
+    h6{
+      display:flex;
+      align-items: center;
+      //justify-content:space-between;
+      .size_table_link{
+        margin-top: 0;
+        align-self:flex-end;
+        margin-left: auto;
+      }
+    }
+
+  }
+  .price{
+    font-family: $familyMoserat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $size_38;
+    line-height: 10px;
+    color: $dark_bg;
+    margin-bottom: 50px;
+  }
+  .catalog_detail_info{
+    .tab{
+      padding: 20px 0;
+      box-sizing: border-box;
+      border-bottom: 1px solid $grey_light;
+      cursor: pointer;
+      h4{
+        font-family: $familyMoserat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: $size_16;
+        line-height: 20px;
+        color: $dark_bg;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+        //margin-bottom: 20px;
+      }
+      .txt{
+        font-family: $familyMoserat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $size_16;
+        line-height: 20px;
+        color: $dark_bg;
+        display: none;
+        margin-top: 20px;
+      }
+      &_active{
+        h4{
+          svg{
+
+          }
+        }
+        .txt{
+          display:block;
+        }
+      }
+    }
+    .btn_cart{
+      margin-top: 50px;
+    }
+  }
+}
 .toggle_hover{
   .imgs{
     position:relative;
@@ -1200,4 +1364,51 @@ header{
     }
   }
 }
+
+.dark_theme{
+  .btn_mini{
+    border:1px solid $white_color;
+    color:$white_color;
+    svg{
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  header{
+    background: transparent;
+    .logo{
+      svg{
+        path{
+          fill: #fff;
+        }
+      }
+    }
+    .main_menu{
+      li{
+        a{
+          color: $white_color;
+        }
+      }
+    }
+    .trigger_group{
+      .phone a{
+        color: $white_color;
+      }
+      .icon_group{
+        color: $white_color;
+        .trigger_icons{
+          a{
+            svg{
+              path{
+                fill: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
