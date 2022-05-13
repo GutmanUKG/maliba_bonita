@@ -159,4 +159,39 @@ document.addEventListener('DOMContentLoaded',()=>{
         }
     });
     //
+
+    //вывод поля поиска
+        const serachBtn = document.querySelector('#serach');
+        let serachForm = document.querySelector('.serach_input');
+        let closeSerachBtn = document.querySelector('.close_serach_btn');
+        serachBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            serachForm.classList.add('serach_input_active')
+            if(!serachForm.classList.contains('serach_input_active')){
+                serachForm.animate([
+                    {transform: 'translateX(-100%) scale(0)'},
+                    {transform: 'translateX(-100%) scale(1)'},
+
+                ], {
+                    duration: 900,
+                    easing: 'linear'
+                })
+            }
+
+        })
+
+        closeSerachBtn.addEventListener('click', ()=>{
+            console.log('click')
+            if(serachForm.classList.contains('serach_input_active')){
+                serachForm.classList.remove('serach_input_active')
+                serachForm.animate([
+                    {transform: 'translateX(-100%)  scale(0)'},
+
+                ], {
+                    duration: 900,
+                    easing: 'linear'
+                })
+            }
+        })
+    //
 })

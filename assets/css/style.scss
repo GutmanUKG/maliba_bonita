@@ -87,6 +87,22 @@ header{
     }
     .icon_group{
       gap: 30px;
+      .select_city{
+        color: $dark_bg;
+        font-family:$familyMoserat;
+        font-size: $size_18;
+        display:flex;
+        align-items: center;
+        gap: 10px;
+        &:after{
+          content: '';
+          width: 10px;
+          height: 8px;
+          display: block;
+          background: url('../img/breadcrumbs_icon.svg') center (center/cover) no-repeat;
+
+        }
+      }
     }
     .trigger_icons{
       gap: 30px;
@@ -1395,8 +1411,12 @@ header{
       .phone a{
         color: $white_color;
       }
+
       .icon_group{
         color: $white_color;
+        .select_city{
+          color: $white_color;
+        }
         .trigger_icons{
           a{
             svg{
@@ -1411,4 +1431,40 @@ header{
   }
 }
 
-
+.serach_input{
+  //transform: scale(0);
+  //width: 0;
+  //display:none;
+}
+.trigger_icons{
+  position: relative;
+  .serach_input{
+    position: absolute;
+    left: 31px;
+    transform: translateX(-100%)  scale(0);
+    width: 320px;
+    &_active{
+      transform: translateX(-100%) scale(1);
+    }
+    input{
+      padding: 5px 10px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid $dark_bg;
+      border-radius: $radius;
+      outline:none;
+      font-family: $familyMoserat;
+      font-size: $size_12;
+    }
+    .close_serach_btn{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      width: 17px;
+      height:17px;
+      background:url('../img/close_icon.svg') center no-repeat;
+      cursor: pointer;
+    }
+  }
+}

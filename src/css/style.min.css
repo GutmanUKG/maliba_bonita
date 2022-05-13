@@ -152,6 +152,21 @@ header .trigger_group .phone a {
 header .trigger_group .icon_group {
   gap: 30px;
 }
+header .trigger_group .icon_group .select_city {
+  color: #1E1E1E;
+  font-family: "Montserrat", sans-serif;
+  font-size: calc((100vw - 360px) / 1560 * 6 + 12px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .trigger_group .icon_group .select_city:after {
+  content: "";
+  width: 10px;
+  height: 8px;
+  display: block;
+  background: url("../img/breadcrumbs_icon.svg") center center/cover no-repeat;
+}
 header .trigger_group .trigger_icons {
   gap: 30px;
 }
@@ -1361,6 +1376,42 @@ header .logo a {
 .dark_theme header .trigger_group .icon_group {
   color: #fff;
 }
+.dark_theme header .trigger_group .icon_group .select_city {
+  color: #fff;
+}
 .dark_theme header .trigger_group .icon_group .trigger_icons a svg path {
   fill: #fff;
+}
+
+.trigger_icons {
+  position: relative;
+}
+.trigger_icons .serach_input {
+  position: absolute;
+  left: 31px;
+  transform: translateX(-100%) scale(0);
+  width: 320px;
+}
+.trigger_icons .serach_input_active {
+  transform: translateX(-100%) scale(1);
+}
+.trigger_icons .serach_input input {
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #1E1E1E;
+  border-radius: 3px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: calc((100vw - 360px) / 1560 * 0 + 12px);
+}
+.trigger_icons .serach_input .close_serach_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/close_icon.svg") center no-repeat;
+  cursor: pointer;
 }
