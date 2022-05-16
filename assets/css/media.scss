@@ -96,3 +96,286 @@
     }
   }
 }
+@media (max-width: 1024px){
+  header{
+    .row{
+      justify-content:space-between;
+    }
+    .trigger_group{
+      flex: 0 0 auto;
+      width: 25%;
+    }
+  }
+}
+@media (max-width: 960px){
+  .catalog_wrapper{
+    .catalog_list{
+      gap: 20px;
+      .item{
+        flex: 0 0 calc(50% - 10px);
+        .item_head{
+          flex-wrap:wrap;
+          margin-bottom: 10px;
+
+          h5{
+            width: 100%;
+            flex: 0 0 100%;
+          }
+          .price{
+
+          }
+        }
+      }
+    }
+  }
+
+  .catalog_detail_imgs{
+    .catalog_detail_imgs_list{
+      gap: 20px;
+      .item{
+        flex: 0 0 calc(50% - 10px);
+      }
+    }
+  }
+}
+
+@media (max-width:880px){
+  header{
+    .logo{
+      a{
+        svg{
+          width: 112px;
+        }
+      }
+    }
+    .main_menu{
+      ul{
+        li{
+          a{
+            padding:10px;
+          }
+        }
+      }
+    }
+    .trigger_group{
+      width: 30%;
+    }
+
+  }
+  .banner{
+    height: auto;
+  }
+}
+
+
+@media (max-width:809px){
+  .banner{
+    .item{
+      height: 500px;
+      img{
+        height: 500px;
+      }
+    }
+  }
+  .collection{
+    .collection_items{
+      .right_item{
+        display:none;
+      }
+      .left_item{
+        flex: 0 0 auto;
+        width: 50% ;
+      }
+      .selector_items{
+        flex: 0 0 auto;
+        width: 50%;
+      }
+    }
+  }
+
+  .about{
+    .about_slider_wrapper{
+      .arrow_wrapper{
+        .about_owl_next{
+          width: 40px;
+          height: 40px;
+          left:0;
+          top: calc(100% + 30px);
+        }
+      }
+      .about_item{
+        .img_wrapper{
+          flex: 0 0 auto;
+          width: 100%;
+          margin-bottom: 30px;
+          img{
+            max-width:100%;
+          }
+        }
+        .about_item_text{
+          flex: 0 0 auto;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:790px){
+  header{
+    .logo{
+      order:1;
+      width: 33.33%;
+    }
+    .main_menu{
+      order:0;
+      width:max-content;
+    }
+    .trigger_group{
+      order:2;
+      width:max-content;
+      .icon_group{
+        .trigger_icons{
+          a{
+            display:none;
+
+          }
+          #serach{
+            display:block;
+          }
+        }
+        .select_city{
+          display: none;
+        }
+      }
+    }
+    .main_menu{
+      ul{
+        display: none !important;
+      }
+    }
+  }
+  .menu_bar_mobile{
+    display:flex;
+  }
+}
+
+
+@media(max-width:540px){
+  .banner{
+    margin-top: 90px;
+    .item{
+      height:max-content;
+      .btn_buy{
+        top: calc(100% - 96px);
+        padding: 20px 40px;
+        font-weight: 900;
+      }
+      img{
+        height: auto;
+      }
+    }
+  }
+  .collection{
+    .left_item{
+      img{
+        object-fit: cover;
+      }
+    }
+    .selector_items{
+      ul{
+        gap: 10px;
+        li{
+          a{
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .adr,
+    .footer_menu,
+    .social_list{
+      flex: 0 0 auto;
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 0;
+      &>*{
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 539px){
+  .section{
+    padding-top: 40px;
+  }
+  section.news{
+    padding-top: 90px;
+    padding-bottom: 0px;
+  }
+  .collection{
+
+    .selector_items{
+      ul{
+        gap: 10px;
+        justify-content:space-between;
+        height:100%;
+        li{
+          a{
+            padding: 0px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .hit-slider{
+    .hit-slider-item{
+      .imgs{
+        height: 370px;
+        img{
+          object-position:top;
+        }
+      }
+    }
+  }
+  .banner{
+    .item{
+      height: 197px;
+      img{
+        height: 100%;
+      }
+    }
+  }
+
+  .hit-slider{
+    .owl-item{
+
+    }
+    .hit-slider-item{
+      width: calc(260px);
+      margin-left: -16px;
+      .descr{
+        padding-left: 16px;
+      }
+    }
+  }
+  .arrows_slider .btns_owl{
+    width: 24px;
+    height: 24px;
+    background-size:cover;
+  }
+  .hit .top{
+    margin-bottom: 20px;
+  }
+  .collection .collection_items,
+  .about .about_slider_wrapper,
+  .news .news_list{
+    padding-top: 20px;
+  }
+}
