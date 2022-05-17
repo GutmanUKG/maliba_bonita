@@ -9,19 +9,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@300;400;500;600;700;800;900&family=PT+Sans+Caption:wght@700&display=swap"
           rel="stylesheet">
+
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Для слайдера на мобилке   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- Для слайдера на мобилке   -->
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/media.min.css">
+    <link rel="stylesheet" href="./css/catalog_media.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
+    <!-- Для слайдера на мобилке   -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Для слайдера на мобилке   -->
     <script src="./js/toggle_hover.js"></script>
-    <script src="./js/sort_fillter.js"></script>
+<!--    <script src="./js/sort_fillter.js"></script>-->
     <script src="./js/filter_price.js"></script>
     <script src="./js/accardion.js"></script>
+    <script src="./js/catalog_mobile_slider.js"></script>
     <title>Catalog</title>
 </head>
 <body class="catalog_page">
@@ -58,7 +71,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="info">
                             Скидки
                         </a>
                     </li>
@@ -86,7 +99,13 @@
                         Алматы
                     </div>
                     <div class="trigger_icons d-flex">
-                        <a href="#">
+                        <form action="" class="serach_input">
+                            <input type="text" placeholder="Поиск...">
+                            <div class="close_serach_btn">
+
+                            </div>
+                        </form>
+                        <a href="#" id="serach">
                             <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -95,7 +114,6 @@
                                 <path d="M17.1274 15.3064C16.867 15.0461 16.4449 15.0461 16.1846 15.3064C15.9242 15.5668 15.9242 15.9889 16.1846 16.2492L19.74 19.8047C20.0004 20.0651 20.4225 20.0651 20.6828 19.8047C20.9432 19.5444 20.9432 19.1223 20.6828 18.8619L17.1274 15.3064Z"
                                       fill="#1E1E1E"/>
                             </svg>
-
                         </a>
                         <a href="#">
                             <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
@@ -162,7 +180,7 @@
                 </div>
                 <div class="row scroll_block">
                     <div class="col-8 catalog_detail_imgs">
-                        <div class="row d-flex catalog_detail_imgs_list">
+                        <div class="row d-flex catalog_detail_imgs_list owl-carousel owl-theme">
                             <div class="item">
                                 <img src="./img/detail_img_1.png" alt="">
                             </div>
@@ -329,7 +347,7 @@
     <section class="section"></section>
 </main>
 
-<!--Меню каталога-->
+<!--Меню каталога для Пк и планшетов-->
 <div class="catalog_menu">
     <div class="container">
         <nav class="d-flex align-items-start">
@@ -442,6 +460,125 @@
 </div>
 <!--Конец меню каталога-->
 
+<!--Меню каталога для мобилок-->
+<div class="catalog_menu_mobile">
+    <div class="container">
+        <div class="row">
+            <div class="col-11 wrapper_menu">
+                <div class="catalog_menu_mobile_content">
+                    <div class="catalog_menu_mobile_title">
+                        <span>
+                            Каталог
+                        </span>
+                        <div class="selector_city">
+                            Алматы
+                        </div>
+                    </div>
+                    <nav class="catalog_menu_mobile_list">
+                        <ul>
+                            <li>
+                                <a href="#">платья</a>
+                            </li>
+                            <li>
+                                <a href="#">блузки</a>
+                            </li>
+                            <li>
+                                <a href="#">боди</a>
+                            </li>
+                            <li>
+                                <a href="#">брюки</a>
+                            </li>
+                            <li>
+                                <a href="#">вечер</a>
+                            </li>
+                            <li>
+                                <a href="#">выпускной</a>
+                            </li>
+                            <li>
+                                <a href="#">кардиганы</a>
+                            </li>
+                            <li>
+                                <a href="#">комбинезоны</a>
+                            </li>
+                            <li>
+                                <a href="#">костюмы</a>
+                            </li>
+                            <li>
+                                <a href="#">куртки</a>
+                            </li>
+                            <li>
+                                <a href="#">пальто</a>
+                            </li>
+                            <li>
+                                <a href="#">пиджаки</a>
+                            </li>
+                            <li>
+                                <a href="#">свадьба</a>
+                            </li>
+                            <li>
+                                <a href="#">свитеры</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="catalog_menu_mobile_list_fixed">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="collection_link link">
+                                        Коллекции
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="contact_link link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Конец меню каталога-->
+<!--Меню бар для мобилок-->
+<div class="menu_bar_mobile">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="list_link">
+                    <a href="#">
+                        <img src="./img/user_icon.svg" alt="">
+                        <span>
+                            Кабинет
+                        </span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/box_icon.svg" alt="">
+                        <span>
+                            Акции
+                            </span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/sale_icon.svg" alt="">
+                        <span>
+                            Скидки
+                        </span>
+                    </a>
+                    <a href="#">
+                        <img src="./img/cart_icon.svg" alt="">
+                        <span>
+                           Корзина
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Конец меню бар для мобилок-->
 <footer class="footer">
     <div class="container">
         <div class="footer_logo">
